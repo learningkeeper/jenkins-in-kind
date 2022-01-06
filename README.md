@@ -19,6 +19,7 @@ https://kubernetes.io/docs/concepts/storage/storage-classes/
 
 `bash -x bootstrap.sh`
 
+## in browser, using 127.0.0.1:80 to connect to
 
 
 

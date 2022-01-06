@@ -1,4 +1,4 @@
-# Jenkins in Kubernetes
+# Jenkins in Kind
 This repository is a POC for setting up a simple HA Jenkins  running in Kubernetes by using kind.
 
 **Prerequisite**

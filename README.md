@@ -2,10 +2,10 @@
 This repository is a POC for setting up a simple HA Jenkins  running in Kubernetes by using kind.
 
 **Prerequisite**
-`
-Please install helm, kind, docker first
 
-`
+`Please install helm, kind, docker first`
+
+
 
 # The repo is running jenkins in k8s by using kind
 
@@ -17,10 +17,8 @@ https://kubernetes.io/docs/concepts/storage/storage-classes/
 
 ##  how to run the POC
 
-`
-bash -x bootstrap.sh`
+`bash -x bootstrap.sh`
 
-``
 
 
 

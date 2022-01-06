@@ -23,7 +23,10 @@ helm upgrade --install jenkins ./jenkins-k8s -f jenkins-tailored-values.yaml -n 
 kubectl delete   validatingwebhookconfigurations ingress-nginx-admission -A
 
 # apply ingress yaml manually
-kubectl apply -f app/app-ingress.yaml
+kubectl apply -f app-ingress.yaml
+
+sleep 30
+
 
 echo "Use browser to connect 127.0.0.1:80"
-
+curl -D- 127.0.0.1:80 

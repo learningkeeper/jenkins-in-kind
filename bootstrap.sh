@@ -15,7 +15,7 @@ kubectl wait --namespace ingress-nginx \
 
 helm upgrade --install jenkins ./jenkins-k8s -f jenkins-tailored-values.yaml -n default
 
-# delete ingress-nginx webhook for mis-dection
+# delete ingress-nginx webhook for mis-dectection
 kubectl delete   validatingwebhookconfigurations ingress-nginx-admission -A
 
 # apply ingress yaml manually

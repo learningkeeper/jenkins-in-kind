@@ -10,9 +10,11 @@ This repository is a POC for setting up a simple HA Jenkins  running in Kubernet
 # The repo is running jenkins in k8s by using kind
 
 
-### For HA purpose in reality, please use 2 more replicas and pod antiaffinity to run in different nodes. Please refer to the jenkins-tailored-values.yaml 
+# For HA purpose in reality, please use 2 more replicas and pod antiaffinity to run in different nodes. Please refer to the jenkins-tailored-values.yaml 
 
-### Given the conditions of using persist volume in cloud, it is better to some GCP storageClass in PVC.
+## (noted) In this POC, it is only run master node. In real setting, it should be running multiple nodes in different zone and region.
+
+# Given the conditions of using persist volume in cloud, it is better to some GCP storageClass in PVC.
 https://kubernetes.io/docs/concepts/storage/storage-classes/
 
 ##  how to run the POC

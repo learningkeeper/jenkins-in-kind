@@ -14,7 +14,7 @@ This repository is a POC for setting up a simple HA Jenkins  running in Kubernet
 
 #### (noted) In this POC, it is only run master node. In real setting, it should be running multiple nodes in different zone and region for HA purpose.
 
-#### Given the conditions of using persist volume in cloud, it is better to some GCP storageClass(standard, premium etc.) in PVC. You could high SLA saas and low latency storage.
+#### Given the conditions of using persist volume in cloud, it is better to some GCP storageClass(standard, premium etc.) in PVC. You could use high SLA saas with low latency storage.
 https://kubernetes.io/docs/concepts/storage/storage-classes/
 
 

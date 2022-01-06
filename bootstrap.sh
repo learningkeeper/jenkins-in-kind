@@ -12,10 +12,6 @@ kubectl wait --namespace ingress-nginx \
   --selector=app.kubernetes.io/component=controller \
   --timeout=90s
 
-# install app-ingress
-kubectl apply -f app/app-ingress.yaml -n default
-kubectl apply -f app/ingress-nginx-deployment.yaml -n ingress-nginx
-
 
 helm upgrade --install jenkins ./jenkins-k8s -f jenkins-tailored-values.yaml -n default
 
@@ -25,7 +21,8 @@ kubectl delete   validatingwebhookconfigurations ingress-nginx-admission -A
 # apply ingress yaml manually
 kubectl apply -f app-ingress.yaml
 
-sleep 30
+echo "sleep 300 seconds"
+sleep 300
 
 
 echo "Use browser to connect 127.0.0.1:80"
